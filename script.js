@@ -19,3 +19,9 @@ function findLongestWord(str) {
       return a.length > b.length ? a : b;
     }).length;
 }
+
+// check for palindromes
+function palindrome(str) {
+  str = str.replace(/[\W_]/g, '').toLowerCase()
+  return str === str.split('').reverse().join('');
+}
