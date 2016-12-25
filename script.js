@@ -25,3 +25,18 @@ function palindrome(str) {
   str = str.replace(/[\W_]/g, '').toLowerCase()
   return str === str.split('').reverse().join('');
 }
+
+// largest numbers in array
+function largestOfFour(arr) {
+  var array = [];
+  for (var i = 0; i < arr.length; i++) {
+    var number = 0;
+    for (var j = 0; j < arr[i].length; j++) {
+      if (arr[i][j] > number) {
+        number = arr[i][j];
+      }
+    }
+    array[i] = number;
+  }
+  return array;
+}
