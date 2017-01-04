@@ -68,3 +68,15 @@ function largestOfFour(arr) {
   }
   return array;
 }
+
+// match str to end of strfunction confirmEnding(str, target) {
+var match;
+  for (var i = 0; i < str.length; i++) {
+    if (str.substring(i, str.length) == target) {
+      return true;
+  } else {
+      match = false;
+    }
+  }
+  return match;
+}
