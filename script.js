@@ -69,7 +69,7 @@ function largestOfFour(arr) {
   return array;
 }
 
-// match str to end of strfunction confirmEnding(str, target) {
+// match str to end of str {
 var match;
   for (var i = 0; i < str.length; i++) {
     if (str.substring(i, str.length) == target) {
@@ -79,4 +79,14 @@ var match;
     }
   }
   return match;
+}
+
+// repeat a string
+function repeatStringNumTimes(str, num) {
+  var newStr = "";
+  while(num > 0) {
+    newStr += str;
+    num--;
+  }
+  return newStr;
 }
